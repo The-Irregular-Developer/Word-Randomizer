@@ -15,10 +15,11 @@ int main() {
     srand(time(NULL));
     for (int i = 0; i < data.size(); i++) {
         int random = rand() % dataWord.size();
-        std::cout << dataWord[random];
-        dataWord.erase(dataWord.begin() + random);
+            std::cout << dataWord[random];
+            dataWord.erase(dataWord.begin() + random);
     }
     std::cout << std::endl << std::endl;
-    system("pause");
+    std::cout << "Press any key to continue...";
+    std::cin.get();
     return 0;
 }
